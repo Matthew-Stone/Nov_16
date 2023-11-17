@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: #333;
+  padding: 14px 16px;
+  text-align: center;
+  color: white;
+}
+
+.inline-block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 10px;
+  background: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.leftcolumn {
+  float: left;
+  width: 25%;
+  background-color: white;
+  padding-right: 20px;
+}
+
+.rightcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.item {
+  background-color: #aaa;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.profile {
+background-color: #aaa;
+width: 100%;
+padding: 20px;
+height: auto;
+}
+
+.imagegroup{
+  background-color: #aaa;
+  width: 100%;
+  padding: 10px;
+  
+  }
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: #333;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.left {
+  float: left;
+  padding-right: 15px;
+}
+
+.separator {
+  width: auto;
+}
+.left {
+  float: left;
+  padding-right: 15px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.photocolumn {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
